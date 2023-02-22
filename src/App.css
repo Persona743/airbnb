@@ -5,3 +5,18 @@
 body {
   margin: 0;
 }
+
+/* navbar section */
+
+nav {
+  display: flex;
+  height: 70px;
+  padding: 20px 30px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav--logo {
+  max-width: 100px;
+}
