@@ -55,8 +55,10 @@ section {
 /* card section */
 
 .card {
+  position: absolute;
   width: 175px;
   font-size: 12px;
+  left: 37px;
 }
 
 .card--image {
