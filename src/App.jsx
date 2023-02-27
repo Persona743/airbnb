@@ -1,18 +1,16 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Card from './components/Card';
-import data from '../data';
+// import data from '../data';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './components/pages/home/homePage';
+import Task from './components/pages/task/Task';
 
 export default function App() {
-    const cards = data.map((item) => {
-        return <Card key={item.id} item={item} />;
-    });
     return (
-        <div>
-            <Navbar />
-            <Hero />
-            <section className="card--list">{cards}</section>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/task" element={<Task />} />
+            </Routes>
+        </BrowserRouter>
     );
 }

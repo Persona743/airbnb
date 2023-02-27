@@ -14,6 +14,29 @@ body {
   font-weight: bold;
 }
 
+a {
+  display: flex;
+  align-items: center;
+  margin-inline-start: auto;
+  padding: 1rem;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  width: 70px;
+  background: #fff;
+  color: #F55A5A;
+
+  border: 1px solid #F55A5A;
+  border-radius: 6px;
+
+  transition: background 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #fff;
+  background: #F55A5A;
+}
+
 /* navbar section */
 
 nav {
