@@ -19,7 +19,6 @@ a {
   align-items: center;
   margin-inline-start: auto;
   padding: 1rem;
-  font-family: Inter, sans-serif;
   font-weight: 500;
   text-decoration: none;
   width: 70px;
@@ -132,7 +131,7 @@ section {
   font-weight: bold;
 }
 
-/* task section */
+/* navbar-task section */
 .task--nav {
   display: flex;
   align-items: center;
@@ -153,3 +152,24 @@ section {
   padding-left: 0.5rem;
   color: #fff;
 }
+
+.task--btn {
+  position: absolute;
+  left: 93%;
+  padding: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  width: 60px;
+  background: #F55A5A;
+  color: #fff;
+
+  border: 1px solid #fff;
+  transition: background 0.2s ease-in-out;
+}
+
+.task--btn:hover {
+  background: #fff;
+  color: #F55A5A;
+}
+
+/* card-task section */
