@@ -13,7 +13,15 @@ export default function CardTask(props) {
                     className="task--location"
                 />
                 <span className="country--name">{props.item.location}</span>
-                <span className="google--task">View on Google Maps</span>
+                <span>
+                    <a
+                        href={props.item.googleMapsUrl}
+                        target="_blank"
+                        className="google--task"
+                    >
+                        View on Google Maps
+                    </a>
+                </span>
                 <h1 className="task--card--title">{props.item.title}</h1>
                 <span className="task--date">
                     {props.item.startDate} -&nbsp;
