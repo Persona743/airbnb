@@ -154,12 +154,12 @@ section {
 }
 
 .task--btn {
-  position: absolute;
+  /* position: absolute; */
   left: 93%;
   padding: 0.5rem;
   font-weight: 500;
   text-decoration: none;
-  width: 60px;
+  width: 70px;
   background: #F55A5A;
   color: #fff;
 
@@ -173,3 +173,54 @@ section {
 }
 
 /* card-task section */
+
+.card--task {
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 55px;
+}
+
+.task--image {
+  width: 175px;
+  height: 228px;
+  margin-right: 19px;
+}
+
+.task--context {
+  padding-top: 1rem;
+}
+
+.task--location {
+  width: 14px;
+  height: 14px;
+}
+
+.country--name {
+  letter-spacing: 0.17em;
+  padding-left: 0.5rem;
+}
+
+.google--task {
+  color: #918E9B;
+  padding-left: 0.5rem;
+  text-decoration: underline;
+}
+
+.task--card--title {
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.task--date {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+}
+
+.task--paragraph {
+  font-size: 12px;
+  line-height: 20px;
+  width: 400px;
+  text-align: justify;
+}
