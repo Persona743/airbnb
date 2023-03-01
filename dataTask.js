@@ -24,7 +24,7 @@ export default [
     {
         id: 3,
         title: 'Geirangerfjord',
-        location: 'Japan',
+        location: 'Norway',
         googleMapsUrl: 'https://goo.gl/maps/1DGM5WrWnATgkSNB8',
         startDate: '01 Oct, 2021',
         endDate: '18 Nov, 2021',

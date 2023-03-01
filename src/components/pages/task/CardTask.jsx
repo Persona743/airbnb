@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function CardTask() {
+export default function CardTask(props) {
     return (
         <div className="card--task">
             <img
-                src="/assets/images/Rectangle 77.png"
+                src={`/assets/images/${props.item.imageUrl}`}
                 className="task--image"
             />
             <div className="task--context">
@@ -12,17 +12,14 @@ export default function CardTask() {
                     src="assets/images/location-pin.png"
                     className="task--location"
                 />
-                <span className="country--name">JAPAN</span>
+                <span className="country--name">{props.item.location}</span>
                 <span className="google--task">View on Google Maps</span>
-                <h1 className="task--card--title">Mount Fuji</h1>
-                <span className="task--date">12 Jan, 2021 -&nbsp;</span>
-                <span className="task--date">24 Jan, 2021</span>
-                <p className="task--paragraph">
-                    Mount Fuji is the tallest mountain in Japan, standing at
-                    3,776 meters (12,380 feet). Mount Fuji is the single most
-                    popular tourist site in Japan, for both Japanese and foreign
-                    tourists.
-                </p>
+                <h1 className="task--card--title">{props.item.title}</h1>
+                <span className="task--date">
+                    {props.item.startDate} -&nbsp;
+                </span>
+                <span className="task--date">{props.item.endDate}</span>
+                <p className="task--paragraph">{props.item.description}</p>
             </div>
         </div>
     );

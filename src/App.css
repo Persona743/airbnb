@@ -185,6 +185,7 @@ section {
   width: 175px;
   height: 228px;
   margin-right: 19px;
+  margin-bottom: 20px;
 }
 
 .task--context {
@@ -198,6 +199,7 @@ section {
 
 .country--name {
   letter-spacing: 0.17em;
+  text-transform: uppercase;
   padding-left: 0.5rem;
 }
 
